@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body{
+	margin:0px;
+}
+header{
+	text-align: center;
+	background-color: lightblue;
+	padding :5px;
+	margin: 0px;
+}
+nav ul{
+	margin:0px;
+}
+nav{
+	padding:5px;
+	background-color: #0a40fa;
+}
+nav a{
+	color:gold;
+	text-decoration: none;
+}
+nav a:hover{
+	color:white;
+	text-decoration: underline;
+}
+
+nav li{
+	list-style: none;
+	display:inline-block;
+	padding-right: 20px;
+}
+section{
+	min-height: 300px;
+}
+section h3{
+	text-align: center;
+	padding:5px;
+}
+section h2{
+	text-align: center;
+}
+section table{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+#mg{
+	padding-left :5px;
+	margin:10px;
+}
+footer{
+	text-align: center;
+	background-color:black;
+	color:white;
+	padding :4px;
+}

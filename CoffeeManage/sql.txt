@@ -1,0 +1,54 @@
+conn system/11111
+set autocommit on
+
+create table tbl_product_01(
+	pcode varchar2(10) NOT NULL,
+	name varchar2(20),
+	cost number(10),
+	primary key(pcode) );
+
+create table tbl_shop_01(
+  scode varchar2(10) NOT NULL,
+  sname varchar2(20),
+  primary key(scode) );
+
+create table tbl_salelist_01(
+  saleno number(10) NOT NULL,
+  pcode varchar2(10) NOT NULL,
+  saledate date,
+  scode varchar2(10) NOT NULL,
+  amount number(10),
+  primary key(saleno) );
+
+insert into tbl_product_01(pcode,name,cost) values('AA01','아메리카노',3000);
+insert into tbl_product_01(pcode,name,cost) values('AA02','에스프레소',3500);
+insert into tbl_product_01(pcode,name,cost) values('AA03','카페라떼',4000);
+insert into tbl_product_01(pcode,name,cost) values('AA04','카라멜마끼',4500);
+insert into tbl_product_01(pcode,name,cost) values('AA05','카푸치노',5000);
+insert into tbl_product_01(pcode,name,cost) values('AA06','초코롤케익',6000);
+insert into tbl_product_01(pcode,name,cost) values('AA07','녹차롤케익',6500);
+insert into tbl_product_01(pcode,name,cost) values('AA08','망고쥬스',7000);
+insert into tbl_product_01(pcode,name,cost) values('AA09','핫초코',2500);
+
+insert into tbl_shop_01(scode,sname) values('S001','강남점');
+insert into tbl_shop_01(scode,sname) values('S002','강서점');
+insert into tbl_shop_01(scode,sname) values('S003','강동점');
+insert into tbl_shop_01(scode,sname) values('S004','강북점');
+insert into tbl_shop_01(scode,sname) values('S005','동대문점');
+insert into tbl_shop_01(scode,sname) values('S006','인천점');
+
+insert into tbl_salelist_01(saleno,pcode,saledate,scode,amount) values(10001,'AA01','20180902','S001',50);
+insert into tbl_salelist_01(saleno,pcode,saledate,scode,amount) values(10002,'AA03','20180902','S002',40);
+insert into tbl_salelist_01(saleno,pcode,saledate,scode,amount) values(10003,'AA04','20180902','S002',20);
+insert into tbl_salelist_01(saleno,pcode,saledate,scode,amount) values(10004,'AA04','20180902','S001',30);
+insert into tbl_salelist_01(saleno,pcode,saledate,scode,amount) values(10005,'AA05','20180902','S004',40);
+insert into tbl_salelist_01(saleno,pcode,saledate,scode,amount) values(10006,'AA03','20180902','S004',30);
+insert into tbl_salelist_01(saleno,pcode,saledate,scode,amount) values(10007,'AA01','20180902','S003',40);
+insert into tbl_salelist_01(saleno,pcode,saledate,scode,amount) values(10008,'AA04','20180902','S004',10);
+insert into tbl_salelist_01(saleno,pcode,saledate,scode,amount) values(10009,'AA01','20180902','S003',20);
+insert into tbl_salelist_01(saleno,pcode,saledate,scode,amount) values(10010,'AA05','20180902','S003',30);
+insert into tbl_salelist_01(saleno,pcode,saledate,scode,amount) values(10011,'AA05','20180902','S001',40);
+insert into tbl_salelist_01(saleno,pcode,saledate,scode,amount) values(10012,'AA03','20180902','S002',50);
+insert into tbl_salelist_01(saleno,pcode,saledate,scode,amount) values(10013,'AA04','20180902','S002',50);
+insert into tbl_salelist_01(saleno,pcode,saledate,scode,amount) values(10014,'AA05','20180902','S004',20);
+insert into tbl_salelist_01(saleno,pcode,saledate,scode,amount) values(10015,'AA01','20180902','S003',30);

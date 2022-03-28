@@ -1,0 +1,23 @@
+conn system/11111
+set autocommit on;
+
+create table TBL_PIZZA_01(
+	pcode char(4) NOT NULL,
+	pname varchar2(30),
+	cost number(7),
+	PRIMARY KEY(pcode) );
+
+create table TBL_SHOP_01(
+	scode char(4) NOT NULL,
+	sname varchar2(20),
+	PRIMARY KEY(scode) );
+
+create table TBL_SALELIST_01(
+	saleno number(7) NOT NULL,
+	scode char(4) NOT NULL,
+	saledate date,
+	pcode char(4) NOT NULL, 
+	amount number(5),
+	FOREIGN KEY (scode) REFERENCES TBL_SHOP_01 (scode),
+	FOREIGN KEY (pcode) REFERENCES TBL_PIZZA_01 (pcode),
+	PRIMARY KEY(saleno) );
