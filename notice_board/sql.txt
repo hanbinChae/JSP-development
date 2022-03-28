@@ -1,0 +1,28 @@
+conn system/11111
+set autocommit on;
+
+create table page_prac (
+	id INT,
+	title VARCHAR2(100),
+	content VARCHAR2(2000),
+	name VARCHAR2(50)
+);
+
+create table userinfo(
+	identify VARCHAR2(20),
+	pw VARCHAR2(200),
+	nickname VARCHAR2(20),
+	PRIMARY KEY(identify)
+);
+	
+insert into userinfo values('admin','8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918','관리자');
+insert into page_prac values (1, '첫글입니다.', '박혜미 선생님께', '채리치');
+insert into page_prac values (2, '두번째글입니다.', '입학하던 날이 엊그제 같은데', '채시경');
+insert into page_prac values (3, '세번째글입니다.', '벌써 3년이 지나가 버렸습니다.', '채하원');
+insert into page_prac values (4, '네번째글입니다.', '처음에 컴퓨터 시스템 일반과목을 배우면서 이거 정말 큰일났다,', '채규리');
+insert into page_prac values (5, '다섯번째글입니다.', '하나도 이해가 안되서 걱정했던 기억이 있습니다.', '채나은');
+insert into page_prac values (6, '여섯번째글입니다.', '그랬던 날도 있었지만 선생님께서 잘 알려주신 덕에 차츰 이해도 되고 흥미도 느꼈습니다.', '채소볶음밥');
+insert into page_prac values (7, '일곱번째글입니다.', '2학년이 되고 모두가 처음 겪는 당황스러운 코로나 상황에 선생님께서 잘 가르쳐주신 덕분에 이렇게 글 남길 수 있는 수준까지 배울 수 있었습니다.', '채규리');
+insert into page_prac values (8, '여덟번째글입니다.', '졸업하면 지금처럼 즐겁게 수업 듣는 날이 그립겠습니다. ', '채지원');
+insert into page_prac values (9, '아홉번째글입니다.', '3년동안 고생 많으셨습니다, 잘 가르쳐 주셔서 감사합니다. 항상 건강하세요', '채이경');
+insert into page_prac values (10, '열번째글입니다.', '채한빈 올림', '채한빈');

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+#sec_title{
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#sec_nav{
+	margin: 0 auto;
+	margin-top:20px;
+}
+span{
+	margin-right: 15px;
+	margin-left: 15px;
+}
+#sec_box1{
+	height: 300px;
+	margin-top: 40px;
+	text-align: left;
+}
