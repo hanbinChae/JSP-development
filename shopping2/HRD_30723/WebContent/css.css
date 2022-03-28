@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body {
+	margin: 0px;
+}
+
+header {
+	text-align: center;
+	padding: 7px;
+	background-color: #0078b3;
+	color: gold;
+}
+
+nav li {
+	list-style: none;
+	display: inline-block;
+	padding-left: 20px;
+}
+nav ul{
+	background-color: #0080ff;
+	margin: 0px;
+}
+section{
+	min-height: 300px;	
+}
+nav a{
+	color: white;
+	text-decoration: none;
+}
+nav a:hover{
+	color:gold;
+	text-decoration: underline;
+}
+section h2{
+		text-align: center;
+}
+section table{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	text-align: center;
+}
+section a{
+	color:blue;
+	text-decoration: none;
+}
+footer{
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 5px;
+}
